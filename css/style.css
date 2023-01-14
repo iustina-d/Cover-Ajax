@@ -19,7 +19,9 @@ body {
   z-index: 9;
   transition: 0.5s;
 }
-
+.navbar.bg {
+  background: #fff;
+}
 .links-container {
   display: flex;
   align-self: center;
@@ -39,9 +41,12 @@ body {
   transition: 0.5s;
   font-weight: bold;
 }
+.navbar.bg .link{
+  color:black;
+  opacity: 0.5;
+}
 
-.link.active,
-.link:hover {
+.link.active, .link:hover,.navbar.bg .link:hover, .navbar.bg .link.active{
   opacity: 1;
 }
 
