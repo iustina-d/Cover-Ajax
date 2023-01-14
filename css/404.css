@@ -1,0 +1,29 @@
+.four-0-four-section{
+  width: 100%;
+  height: 100vh;
+  background: url('/img/404-Pages.jpg');
+  background-size: cover;
+  display: flex;
+  padding-top: 200px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.four-0-four-section .sub-line{
+  display: inline;
+  font-family: 'lato',sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+} 
+.four-0-four-section .sub-line a{
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+}
+
+.cart-icon,.cart-item-count,.user-icon{
+  color: #fff !important;
+}
+.cart-item-count{
+  background: #000 !important;
+}
