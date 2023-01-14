@@ -221,3 +221,127 @@ body {
   margin-top: 30px;
   opacity: 0.5;
 }
+.image-mid-section {
+  width: 100%;
+  height: 600px;
+  padding: 50px 5vw;
+}
+
+.image-collage {
+  width: 100%;
+  height: 100%;
+  background: url("/img/img2.webp");
+  background-size: cover;
+}
+
+.image-collection {
+  position: relative;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  margin: auto;
+}
+
+.collage-img {
+  margin-left: 6vw;
+  position: absolute;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.collage-img:nth-child(1) {
+  width: 350px;
+  height: 350px;
+  top: 20px;
+  left: 40px;
+}
+.collage-img:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  top: 200px;
+  left: 200px;
+}
+.collage-img:nth-child(3) {
+  width: 250px;
+  height: 250px;
+  top: 100px;
+  left: 350px;
+}
+
+.collage-img:hover {
+  transform: translateY(-10px);
+}
+.review-section {
+  padding: 50px 5vw;
+}
+
+.review-section .section-title {
+  color: black;
+}
+
+.review-section .section-title span{
+  color: rgb(210, 196, 182);
+}
+.review-container {
+  margin: 50px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card {
+  text-align: center;
+  width: 250px;
+  height: auto;
+  font-family: 'lato',sans-serif;
+}
+
+.user-dp{
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.user-dp img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-dp::before{
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.user-dp::after{
+  content: attr(data-rating);
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background: rgb(210, 196, 182);
+}
+
+.review-account-name {
+  font-size: 20px;
+  margin:1rem;
+  text-transform: capitalize;
+}
+
+.review {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.7;
+}
